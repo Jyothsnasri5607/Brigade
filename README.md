@@ -1,91 +1,89 @@
-# 🦁 Brigade — Your personal intelligence, built enterprise-grade
+# 🦁 Brigade
 
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/spinabot/brigade/main/assets/brigade-banner-on-black.gif" />
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/spinabot/brigade/main/assets/brigade-banner.gif" />
-    <img src="https://raw.githubusercontent.com/spinabot/brigade/main/assets/brigade-banner.gif" alt="Brigade — your personal intelligence, built enterprise-grade" width="900" />
-  </picture>
+  <img src="assets/brigade-banner.gif" alt="Brigade" width="900" />
 </p>
+
+<p align="center"><strong>Your personal AI crew, running on your machine.</strong></p>
 
 <p align="center">
-  <strong>Built for enterprise scale. Open for everyone.</strong> &middot; <em>An ecosystem, not an app.</em>
+  <a href="https://github.com/Jyothsnasri5607/Brigade"><img src="https://img.shields.io/badge/GitHub-Jyothsnasri5607%2FBrigade-181717?style=flat-square&logo=github" alt="GitHub repository"></a>
+  <a href="https://nodejs.org"><img src="https://img.shields.io/badge/Node.js-22.12%2B-5FA04E?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js 22.12 or newer"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-2ea44f?style=flat-square" alt="MIT License"></a>
 </p>
 
-<p align="center">
-  🔐 <strong>No tokens to juggle. No drama.</strong> No copy-pasting secrets, no telemetry —
-  <strong>we handle them, not you</strong>. Your API keys stay on your own machine, never sent to a middleman.
-</p>
+Brigade is a self-hosted, multi-agent runtime with a terminal chat interface, a
+long-running gateway, persistent memory, isolated workspaces, skills, scheduled
+jobs, and optional messaging channels. Use a hosted model or run locally with
+Ollama. Your configuration and data stay under your control.
 
-<p align="center">
-  🔑 <strong>No API key? No problem.</strong> Sign in with your <strong>Claude</strong>, <strong>ChatGPT</strong>, or
-  <strong>Copilot</strong> subscription — or, if you're already signed into the <strong>Claude Code</strong> or
-  <strong>Codex</strong> CLI, reuse that login (no browser, no re-auth).
-</p>
+## Why Brigade?
 
-<p align="center">
-  🩸💥 <strong>B³ — Brigade Bloody Benchmark</strong> 💥🩸<br/>
-  <sub><strong>NEW in v1.9.0</strong> · the one command that throws your crew to the wolves (lovingly)</sub>
-</p>
+- **One crew, many agents:** delegate work through an org hierarchy.
+- **Persistent memory:** keep useful context across conversations and sessions.
+- **Local-first:** use Ollama without API keys, or connect your preferred provider.
+- **Gateway architecture:** agents keep working while thin clients connect and disconnect.
+- **Approval gates:** privileged shell actions require explicit approval.
+- **Extensible:** add skills, tools, channels, providers, and MCP integrations.
 
-<p align="center">
-  <strong><em>Three B's. One bloody command. Your crew — loose on the open internet.</em></strong>
-</p>
+## Quick Start
 
-<p align="center">
-  <strong>Brigade</strong> is your crew. <strong>Bloody</strong> is what you do to it — fling it into the open with no net, down a red-hot tunnel to the wild. <strong>Benchmark</strong> is the punchline: the only test that ever mattered isn't a lab, it's <em>strangers poking your agents at 3&nbsp;a.m.</em> Survive that, and you've shipped.
-</p>
+### Windows with Ollama
 
-<p align="center">
-  Under the hood it's tame — HTTPS at the edge, no account, no setup. Cloudflare by default, or bring your own relay (<code>bore</code> · <code>frp</code> · <code>sish</code>, all open-source). A secret key rides along <strong>invisibly</strong>: you never see it, and gate-crashers just bleed out on a <code>401</code>. Not feeling the name? It also answers to the buttoned-up <code>brigade expose</code>. 🩸
-</p>
+Install [Ollama](https://ollama.com/download/windows), then download a model:
 
-<p align="center">
-  <code>brigade bloody&nbsp;benchmark</code> &nbsp;·&nbsp; <code>brigade expose</code> &nbsp;·&nbsp; <code>brigade expose stop</code> &nbsp;🩸
-</p>
-
-<p align="center">
-  <a href="https://trendshift.io/repositories/118354?utm_source=trendshift-badge&amp;utm_medium=badge&amp;utm_campaign=badge-trendshift-118354" target="_blank" rel="noopener noreferrer"><img src="https://trendshift.io/api/badge/trendshift/repositories/118354/daily?language=TypeScript" alt="spinabot/brigade on Trendshift" width="250" height="55" /></a>
-</p>
-
-<p align="center">
-  <a href="https://github.com/spinabot/brigade/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/spinabot/brigade/ci.yml?branch=main&style=for-the-badge&logo=githubactions&logoColor=white&label=CI" alt="CI status"></a>
-  <a href="https://www.npmjs.com/package/@spinabot/brigade"><img src="https://img.shields.io/npm/v/@spinabot/brigade?style=for-the-badge&logo=npm&logoColor=white&color=CB3837" alt="npm version"></a>
-  <a href="https://www.npmjs.com/package/@spinabot/brigade"><img src="https://badgen.net/npm/dt/@spinabot/brigade?icon=npm&color=CB3837" alt="npm total downloads"></a>
-  <a href="https://nodejs.org"><img src="https://img.shields.io/node/v/@spinabot/brigade?style=for-the-badge&logo=nodedotjs&logoColor=white&color=5FA04E&label=node" alt="node engine"></a>
-  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge" alt="MIT License"></a>
-  <a href="https://brigade.spinabot.com"><img src="https://img.shields.io/badge/website-brigade.spinabot.com-E8B021?style=for-the-badge&logo=googlechrome&logoColor=white" alt="website"></a>
-</p>
-
-**Brigade is your personal intelligence, built on enterprise-grade tech**: a crew of
-AI agents on a real org chart that share one long-term memory, Tideline, so what one
-agent learns, the rest can use. They delegate to each other, switch models mid-task
-without losing the thread, and act inside the 1,000+ apps you already use. It's an
-ecosystem you host yourself, with the controls and data sovereignty of enterprise
-tech: no account to create, no SaaS in the middle.
-
-The same crew runs on a Raspberry Pi or a server. By default it's a small filesystem
-install; switch to a self-hosted Convex database when you want one. Bring any model:
-Claude, GPT, Gemini, Llama, or a local Ollama. Privileged actions wait for your
-approval, and your keys and data never leave your machine. No telemetry.
-
-It's an ecosystem, not an app: one crew you reach from the terminal, WhatsApp, Telegram,
-Slack, Discord, iMessage, and BlueBubbles, and from your watch, Meta smart glasses, and Meta Quest.
-
-```bash
-# macOS / Linux — installs Node if needed, then Brigade (no sudo)
-curl -fsSL https://brigade.spinabot.com/install.sh | sh
-brigade
+```powershell
+ollama pull llama3.2:3b
 ```
 
-Start it and you get a fast chat TUI. Keep going and you get isolated agents with
-their own workspaces and credentials, persistent memory, a skill system, a cron
-scheduler, sub-agent fan-out, an org hierarchy, messaging channels like WhatsApp and Telegram,
-1,000+ app connectors, an MCP memory server, and an optional self-hosted Convex
-backend — all under one `~/.brigade/` directory you fully own.
+From the Brigade directory:
 
-> One owner, a whole crew — many agents that coordinate through a real org chart,
-> all on hardware and storage **you** control.
+```powershell
+npm ci
+npm run brigade -- onboard
+```
+
+During onboarding choose **Filesystem**, **Ollama**, `llama3.2:3b`, and a keyless
+web-search provider such as DuckDuckGo. Then use two terminals:
+
+```powershell
+# Terminal 1: start the stateful gateway
+npm run brigade -- gateway run
+
+# Terminal 2: open the terminal chat client
+npm run brigade -- tui
+```
+
+### Other providers
+
+The onboarding wizard also supports Anthropic, OpenAI-compatible providers,
+Claude, ChatGPT, GitHub Copilot, and others:
+
+```bash
+npm run brigade -- onboard
+```
+
+Choose the provider you have access to, complete its authentication, select a
+model, and then run the gateway and TUI commands above.
+
+## Development
+
+```bash
+npm run typecheck
+npm test
+npm run build
+```
+
+For source changes, use `npm run dev:tsx -- <command>` or `npm run watch`.
+
+## Data and Configuration
+
+Brigade stores local state in `~/.brigade/`. Set `BRIGADE_STATE_DIR` to use a
+different location. The repository uses filesystem storage by default and also
+supports a self-hosted Convex backend.
+
+For the full CLI reference, architecture notes, channels, memory, storage modes,
+and extension APIs, continue to the sections below.
 
 ---
 
